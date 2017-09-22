@@ -1,6 +1,6 @@
 # Epigrass Vagrant Box
 
-This project creates a VM on your computer that runs [Epigrass](http://pythonhosted.org/epigrass/index.html).
+This project creates a Virtual Machine (VM) on your computer running [Epigrass](http://pythonhosted.org/epigrass/index.html).
 
 ### Features
 
@@ -24,8 +24,10 @@ This project creates a VM on your computer that runs [Epigrass](http://pythonhos
 7. In terminal, execute `vagrant ssh -C epigrass`. A window will appear displaying the Epigrass user interface.
 
 
-## Operating Instruction
+## Operating Instructions
 
 You can launch epigrass by performing steps 5 - 7 of the installation instructions
 
 When epigrass launches, a new folder will be created in this project's directory called `epigrass-data`. Any files you place in this folder will be visible to the application.
+
+Even when you close the Epigrass window, the VM is still running on your computer. In the project directory, run `vagrant suspend` to shutdown the VM.

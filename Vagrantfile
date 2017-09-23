@@ -11,22 +11,23 @@ Vagrant.configure("2") do |config|
     export C_INCLUDE_PATH=/usr/include/gdal
     apt-get update
     sudo apt-get install \
+      build-essential \
+      libgdal-dev \
+      libqt4-opengl \
       python \
       python-dev \
-      build-essential \
-      python-setuptools \
-      python-pip \
-      redis-server \
-      python-numpy \
       python-matplotlib \
       python-matplotlib-data \
       python-matplotlib-doc \
       python-mysqldb \
-      python-qwt5-qt4 \
-      libqt4-opengl \
+      python-numpy \
+      python-pip \
       python-qt4-gl \
+      python-qwt5-qt4 \
+      python-setuptools \
+      redis-server \
       xauth \
-      libgdal-dev --yes
+      --yes
     pip install --upgrade pip
     pip install GDAL==1.10.0 Cython pymysql
     pip install epigrass 
